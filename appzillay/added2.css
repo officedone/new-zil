@@ -1,0 +1,19 @@
+.hide, * > .hide{
+    display: none !important;
+}
+.uploaderx{
+    background: rgb(19, 42, 219); font-weight: bold;
+    text-transform: uppercase;
+}
+.loadingx{ display: block;}
+.loadingx.dots::after{
+    position: relative; content: '...';
+    animation: dot 1s linear 0s infinite;
+}
+.errorx{ display: block; color: red;}
+@keyframes dot {
+    0%{ content: '';}
+    25%{ content: '.';}
+    50%{ content: '..';}
+    75%{ content: '...';}
+}
